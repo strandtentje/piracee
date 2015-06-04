@@ -1,0 +1,99 @@
+@import url('info.css');
+@import url('head.css');
+
+body {
+	margin: 0;
+	font-family: sans-serif;
+	background-color: #30415A;
+}
+
+.section p, 
+.section h1, 
+.section h2, 
+.section h3, 
+.section ul {
+	box-sizing: border-box;
+	margin-left: 0.5cm;
+	margin-right: 0.5cm;
+}
+
+@media (min-width: 800px) {
+	.section p, 
+	.section h1, 
+	.section h2, 
+	.section h3, 
+	.section ul {
+		max-width: 21cm;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.signup.section {
+	background: white;
+	margin: 0.5cm 0;
+	padding: 0.5cm 0;
+}
+
+.signup.section a {
+	color: #30415A;
+}
+
+.signup.section h2 {
+	color: #454545;
+}
+
+.attendee.section {
+	color: white;
+}
+
+@media (min-width: 800px) {
+
+	.attendee.section h2 {
+		color: #454545;
+	}
+
+	.attendee.section {
+		background-color: white;
+		color: black;
+		margin-top: 0.3cm;
+		padding-top: 0.3cm;
+		padding-bottom: 0.3cm;
+	}
+
+	.attendee.section ul {
+		list-style-type: none;
+		margin: 0 auto;
+		width: 21cm;
+		padding: 0;
+	}
+
+	.attendee.section ul li {
+		width: 29%;
+		padding: 1%;
+		margin: 1%;
+		display: block;
+		float: left;
+		background-color: #30415A;
+		color: white;
+		font-size: 14pt;
+	}
+
+	.attendee.section:after {
+		content: '.';
+		display: block;
+		font-size: 0;
+		clear: both;
+	}
+}
+
+.footer {
+	color: white;
+	text-align: center;
+	padding: 0.6cm 0;
+	font-size: 90%;
+}
+
+.footer a {
+
+}

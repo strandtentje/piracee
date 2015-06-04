@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PiraCee Sailing Weekend</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles.css">
+		<link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="head section">
+			<h1>PiraCee Sailing Weekend</h1>
+			<p>
+				At the end of this academic year, the PiraCee is organizing a sailing weekend!
+				<br />
+				From July 10th until July 12th you will explore Friesland's many lovely lakes as a way to relax after the&nbsp;exam&nbsp;stress.
+			</p>
+			<a href="#more" class="cfa">Arr, tell me more ▼</a> 
+		</div>
+		<div class="info section" id="more">
+			<div class="costs section" >
+				<h2>Costs</h2>
+				<p>
+					A maximum of €60,- will be deducted from your bank account. In case the costs turn out to be lower, less than €60,- will be deducted.
+				</p>
+				<img src="kistje2.png"></div>
+			<div class="map section">
+				<h2>Where are we going?</h2>
+				<p>
+					This year we will start our sailing weekend in the scenic town of <a target=_blank href="https://www.google.nl/maps/place/Sneek/@53.0216877,5.6722423,11z">Sneek</a>. From there we will sail to a not yet determined town.
+				</p>
+				<div id="map-canvas">
+
+				</div>
+			</div>
+		</div>
+		<div class="signup section">
+			<h2>Sign up to become a Pirate</h2>
+			<p>
+				<a href="https://docs.google.com/forms/d/1OcB3GBHaSJNtH-MAU6FnxFTQR-VzEVLAhto4VSVxRDE/viewform">Using the form here*</a>
+			</p>
+			<p>
+				<small>*Be sure to sign up before the July 1st deadline!</small>
+			</p>
+		</div>
+		<div class="crap section">
+			<div class="your crap">
+				<h2>Things you need to take</h2>
+				<ul>
+					<li>OV-kaart</li>
+					<li>Warm Clothing</li>
+					<li>Swimming Gear</li>
+					<li>Torchlight</li>
+					<li>Rainwear</li>
+					<li>Water Bottle (in case it gets too hot!)</li>
+					<li>Toiletries</li>
+					<li>Sun Screen, Aftersun, Sun glasses</li>
+					<li>Towel(s)</li>
+					<li>Mosquito repellant</li>
+					<li>Sleeping bag (and mat)</li>
+					<li>Any games you might want to play</li>
+					<li>Wallet</li>
+					<li>Cell Phone/Charger</li>
+				</ul>
+			</div>
+			<div class="our crap">
+				<h2>Things we will be taking</h2>
+				<ul>
+					<li>Drinks</li>
+					<li>Plates</li>
+					<li>Beer</li>
+					<li>Cutlery</li>
+					<li>Crisps</li>
+					<li>Bread</li>
+					<li>Cookies</li>
+					<li>'Beleg'</li>
+					<li>Toilet Paper</li>
+					<li>Butter</li>
+					<li>Cups</li>
+					<li>Matches</li>
+					<li>Garbage Bags</li>
+				</ul>
+			</div>				
+		</div>
+
+		<div class="attendee section">
+			<h2>List of attendees</h2>
+			<ul>
+				<li>
+					Henk
+				</li>
+				<li>
+					Piet
+				</li>
+				<li>
+					Klaas
+				</li>
+				<li>
+					Ibrahim
+				</li>
+			</ul>
+		</div>
+
+		<div class="footer section">
+			This website was hacked together by
+			<a href="http://www.borreh.nl/">
+				Rob Tierolff</a>
+			and
+			<a href="//www.google.nl/search?q=pink+elephant&tbm=isch">
+				Martijn Luinstra</a>
+			for the 
+			<a href="//svcover.nl">
+				sv. Cover</a>
+			PiraCee.
+		</div>
+	    <script src="https://maps.googleapis.com/maps/api/js"></script>
+	    <script>
+		  function initialize() {
+		    var mapCanvas = document.getElementById('map-canvas');
+		    var mapOptions = {
+		      center: new google.maps.LatLng(53.0216877, 5.6722423),
+		      zoom: 11,
+		    }
+		    var map = new google.maps.Map(mapCanvas, mapOptions);
+		  }      
+		  google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+	</body>
+</html>

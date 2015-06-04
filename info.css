@@ -1,0 +1,88 @@
+a {
+	color: white;
+}
+
+.info, .crap.section {
+	color: white;
+}
+
+.info img {
+	display: none;
+}
+
+@media (min-width: 800px) {
+	.info, .crap.section {
+		color: black;
+		max-width: 25cm;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0.5cm;
+	}
+
+	.info h2, .crap.section h2 {
+		color: #454545;
+	}
+
+	.info a {
+		color: #30415A;
+	}
+
+	.info img {
+		display: block;
+	}
+
+	.info:after, .crap.section:after {
+		content: '.';
+		display: block;
+		font-size: 0;
+		clear: both;
+	}
+
+	.info .costs,
+	.info .map {
+		height: 13.5cm;
+	}
+
+	.crap.section .your.crap,
+	.crap.section .our.crap {
+		height: 10cm;
+	}
+
+	.info .costs,
+	.info .map,
+	.crap.section .your.crap,
+	.crap.section .our.crap {
+		width: 45%;
+		box-sizing: border-box;
+		margin: 2.5%;
+		float: left;
+		background-color: white;
+		overflow: hidden;
+	}
+
+	.info .costs p,
+	.info .costs h2,
+	.info .map p,
+	.info .map h2,
+	.crap.section .your.crap p,
+	.crap.section .your.crap h2,
+	.crap.section .our.crap p,
+	.crap.section .our.crap h2 {
+		margin: 0.5cm;
+	}
+
+	.info .costs {
+		overflow: hidden;
+	}
+
+	.info .costs img  {
+		width: 100%;
+		vertical-align: bottom;
+	}
+
+	.info .map #map-canvas {
+		width: 100%;
+		height: 10cm;
+		pointer-events: none;
+	}	
+}
